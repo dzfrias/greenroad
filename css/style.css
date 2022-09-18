@@ -37,12 +37,10 @@ ul > li:before {
 }
 
 .subheader {
+  display: block;
+  padding-left: 90px;
   font-size: 20px;
   font-style: italic;
-}
-
-br {
-  line-height: 0em;
 }
 
 .nobottom {
