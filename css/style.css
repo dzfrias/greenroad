@@ -1,0 +1,158 @@
+* {
+  font-family: "Comfortaa";
+}
+
+html, body {
+  height:100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+ul {
+  padding-left: 15px;
+  list-style-type: none;
+}
+ul > li {
+  text-indent: -5px;
+}
+ul > li:before {
+  content: "- ";
+  text-indent: -5px;
+}
+
+#mainHeader {
+  background-color: rgb(0, 101, 73);
+  color: white;
+  margin-top: 0;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.subheader {
+  font-size: 20px;
+  font-style: italic;
+}
+
+br {
+  line-height: 0em;
+}
+
+.nobottom {
+  margin-bottom: 5px;
+}
+
+#main {
+  width: 50%;
+  height: 30%;
+  padding-left: 13px;
+}
+
+#translation {
+  border: 1px solid #000;
+  width: 50%;
+  height: 50%;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-family: "Lobster";
+  margin-left: 10px;
+  background-color: white;
+}
+
+#info {
+  border: 1px solid #000;
+  padding-left: 15px;
+  background-color: white;
+}
+
+#info * {
+  font-family: "Lobster";
+}
+
+/* Language switch button */
+#langSwitchText, #langSwitchText > * {
+  font-size: 20px;
+  color: #000;
+}
+#langSwitch:hover {
+  font-style: italic;
+}
+#langSwitch {
+  padding: 0;
+  border: none;
+  background: none;
+  color: green;
+}
+#langSwitch:not(:active) {
+  opacity: 1;
+  animation: fade 0.5s linear;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#userBox {
+  margin-left: 10px;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bold {
+  font-style: bold;
+}
+
+.pinyin {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#translate {
+  margin-bottom: 10px;
+}
+
+textarea {
+  border: 1px solid #000;
+  resize: none;
+  width: 50%;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-top: 8px;
+}
+
+/* Segments */
+.segment {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+.segment:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.segment:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

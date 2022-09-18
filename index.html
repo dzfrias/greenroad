@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Greenroad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <script src="greenroad.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script>
+      Parse.initialize("Z41jDtSx6uOiw9uvAq1j6uIvOWyMlIMUGwfFqBOb", "UdPGIL6OGRaTx7h83ZxoqMBG72SGfbxH93AjKWE9");
+      Parse.serverURL = "https://parseapi.back4app.com/";
+    </script>
+  </head>
+  <body>
+    <h1 id="mainHeader">Greenroad <span class="subheader">A Mediocre Translator</span></h1>
+    <div id="main">
+      <span id="langSwitchText">To: <button onclick="toggleLang()" id="langSwitch">Chinese</button></span>
+      <form onsubmit="translateText(); return false">
+        <textarea rows="5" cols="20" placeholder="Enter English here" id="userBox"></textarea>
+      </form>
+      <br>
+      <button onclick="translateText()" id="translate">Translate</button>
+      <hr>
+      <h2>Translation</h2>
+      <p id="translation"></p>
+      <div id="info" style="display: none;">
+        <h3 class="nobottom">Definitions of <span id="character"></span></h3>
+      </div>
+    </div>
+  </body>
+</html>
