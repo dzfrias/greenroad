@@ -50,26 +50,32 @@ br {
 }
 
 #main {
-  width: 50%;
+  width: 90vw;
   height: 30%;
-  padding-left: 13px;
+  padding-left: 1vw;
 }
 
 #translation {
   border: 1px solid #000;
-  width: 50%;
+  width: 20em;
   height: 50%;
   padding-top: 5px;
   padding-left: 5px;
-  font-family: "Lobster";
   margin-left: 10px;
   background-color: white;
 }
 
+#translation > span {
+  font-family: "Lobster";
+  font-size: 18px;
+}
+
 #info {
+  width: 19.8em;
   border: 1px solid #000;
-  padding-left: 15px;
-  background-color: white;
+  padding-left: 10px;
+  margin: 9px;
+  background-color: rgb(245, 250, 255);
 }
 
 #info * {
@@ -104,6 +110,7 @@ br {
 }
 
 #userBox {
+  width: 21em;
   margin-left: 10px;
 }
 
