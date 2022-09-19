@@ -14,13 +14,13 @@
     </script>
   </head>
   <body>
-    <h1 id="mainHeader">Greenroad <span class="subheader">A Mediocre Translator</span></h1>
+    <h1 class="unselectable" id="mainHeader">Greenroad <span class="subheader unselectable">A Mediocre Translator</span></h1>
     <div id="main">
       <span id="langSwitchText">To: <button onclick="toggleLang()" id="langSwitch">Chinese</button></span>
       <form onsubmit="translateText(); return false">
-        <textarea rows="5" cols="20" placeholder="Enter English here" id="userBox"></textarea>
+        <textarea class="unselectable" rows="5" cols="20" placeholder="Enter English here" id="userBox"></textarea>
       </form>
-      <button onclick="translateText()" id="translate">Translate</button>
+      <button class="unselectable" onclick="translateText()" id="translate">Translate</button>
       <hr>
       <h2>Translation</h2>
       <p id="translation"></p>

@@ -116,6 +116,13 @@ ul > li:before {
   font-style: bold;
 }
 
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .pinyin {
   font-size: 18px;
   font-style: italic;
