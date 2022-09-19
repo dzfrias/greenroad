@@ -7,7 +7,7 @@ async function translateText() {
     const translated = await Parse.Cloud.run("translate", {text: input, to: abbrevLang(lang)});
     const output = document.getElementById("translation");
     cleanupInfo()
-    if (typeof(translated) == "string") {
+    if (typeof(translated) === "string") {
         output.innerText = translated;
         return;
     }
@@ -91,7 +91,7 @@ function getCurrentLang() {
 }
 
 function abbrevLang(language) {
-    if (language == "Chinese") {
+    if (language === "Chinese") {
         return "zh";
     } else {
         return "en";
@@ -101,7 +101,7 @@ function abbrevLang(language) {
 async function toggleLang() {
     const button = document.getElementById("langSwitch");
     const userBox = document.getElementById("userBox");
-    if (getCurrentLang() == "Chinese") {
+    if (getCurrentLang() === "Chinese") {
         button.innerText = "English";
         userBox.placeholder = "Enter Chinese here";
     } else {
