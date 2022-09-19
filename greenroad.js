@@ -1,5 +1,8 @@
 async function translateText() {
     const input = document.getElementById("userBox").value;
+    if (input === "") {
+        return;
+    }
     const lang = getCurrentLang();
     const translated = await Parse.Cloud.run("translate", {text: input, to: abbrevLang(lang)});
     const output = document.getElementById("translation");
