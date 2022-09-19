@@ -127,6 +127,7 @@ ul > li:before {
 }
 
 #translate {
+  color: black;
   margin-bottom: 25px;
   margin-left: 8em;
   margin-top: 10px;
