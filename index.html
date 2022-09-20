@@ -18,7 +18,7 @@
     <div id="main">
       <span id="langSwitchText">To: <button onclick="toggleLang()" id="langSwitch">Chinese</button></span>
       <form onsubmit="translateText(); return false">
-        <textarea rows="5" cols="20" placeholder="Enter English here" id="userBox"></textarea>
+        <textarea spellcheck="true" rows="5" cols="20" placeholder="Enter English here" id="userBox"></textarea>
       </form>
       <button class="unselectable" onclick="translateText()" id="translate">Translate</button>
       <hr>
