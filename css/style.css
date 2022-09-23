@@ -147,6 +147,9 @@ ul > li:before {
   background-color: lightgrey;
   font-size: 15px;
 }
+#translate:active {
+  background-color: rgb(30, 131, 103);
+}
 
 textarea {
   border: 1px solid #000;
